@@ -1,5 +1,11 @@
 # @azu/mono-one
 
+## 1.8.0
+
+### Minor Changes
+
+- 2ca6a18: changed quotations, added new constant
+
 ## 1.7.0
 
 ### Minor Changes
