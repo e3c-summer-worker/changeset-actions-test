@@ -19,6 +19,9 @@ jobs:
         with:
           # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
           fetch-depth: 0
+          # https://github.com/changesets/action/issues/70#issuecomment-813015134
+          # so we can pretend the workflow is not a bot
+          persist-credentials: false
 
       - name: Setup Node.js 16.x
         uses: actions/setup-node@v2
