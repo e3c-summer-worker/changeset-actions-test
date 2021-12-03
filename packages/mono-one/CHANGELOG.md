@@ -1,5 +1,11 @@
 # @azu/mono-one
 
+## 2.1.0
+
+### Minor Changes
+
+- 2e0b12e: Add new constant
+
 ## 2.0.0
 
 ### Major Changes
