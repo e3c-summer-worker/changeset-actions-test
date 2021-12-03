@@ -1,5 +1,11 @@
 # @azu/mono-three
 
+## 1.7.0
+
+### Minor Changes
+
+- cd00e9b: Add constant
+
 ## 1.6.2
 
 ### Patch Changes
