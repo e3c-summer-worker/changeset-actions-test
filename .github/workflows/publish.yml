@@ -33,5 +33,9 @@ jobs:
 
       - name: Create Release Pull Request
         uses: changesets/action@v1
+        with:
+          # This expects you to have a script called release which does a build for your packages and calls changeset publish
+          # I don't call changeset publish with my yarn release B)
+          publish: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
