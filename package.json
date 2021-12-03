@@ -19,7 +19,7 @@
     ]
   },
   "scripts": {
-    "publish": "yarn workspaces foreach run publish"
+    "release": "echo \"MOCK RELEASE:\n\" && yarn workspaces foreach run release"
   },
   "devDependencies": {
     "@changesets/cli": "^2.6.1",

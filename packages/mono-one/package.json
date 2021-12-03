@@ -14,9 +14,10 @@
   "license": "MIT",
   "author": "azu",
   "files": [
-    "bin/",
-    "lib/",
-    "src/"
+    "lib",
+    "LICENSE.md",
+    "package.json",
+    "README.md"
   ],
   "main": "lib/index.js",
   "directories": {
@@ -25,7 +26,7 @@
   },
   "scripts": {
     "test": "echo OK",
-    "publish": "echo publishing..."
+    "release": "npm publish --dry-run"
   },
   "publishConfig": {
     "access": "public"
