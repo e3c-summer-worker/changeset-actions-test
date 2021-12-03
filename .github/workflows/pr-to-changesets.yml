@@ -15,13 +15,13 @@ jobs:
     if: github.event.pull_request.merged == true
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [16.x]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: set remote url
         run: |
-          git remote add origin-with-token https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git remote add origin-with-token https://$GITHUB_ACTOR:${{ secrets.GH_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
           git config --global user.name "$GITHUB_ACTOR"
       - name: setup Node ${{ matrix.node_version }}
@@ -35,12 +35,12 @@ jobs:
           OWNER: ${{ github.event.pull_request.head.repo.owner.login }}
           REPO: ${{ github.event.pull_request.head.repo.name }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       - name: Git push
         run: |
           git add .changeset
           git commit -m "CI(changeset): add changeset for PR #${PR_NUMBER}"
           git push origin-with-token main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
