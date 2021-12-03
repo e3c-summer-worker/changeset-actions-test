@@ -5,7 +5,7 @@ __metadata:
   version: 5
   cacheKey: 8
 
-"@azu/mono-one@^1.6.3, @azu/mono-one@^1.8.1, @azu/mono-one@workspace:packages/mono-one":
+"@azu/mono-one@^2.0.0, @azu/mono-one@workspace:packages/mono-one":
   version: 0.0.0-use.local
   resolution: "@azu/mono-one@workspace:packages/mono-one"
   languageName: unknown
@@ -15,16 +15,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@azu/mono-three@workspace:packages/mono-three"
   dependencies:
-    "@azu/mono-one": ^1.8.1
-    "@azu/mono-two": ^1.6.0
+    "@azu/mono-one": ^2.0.0
+    "@azu/mono-two": ^1.6.3
   languageName: unknown
   linkType: soft
 
-"@azu/mono-two@^1.6.0, @azu/mono-two@workspace:packages/mono-two":
+"@azu/mono-two@^1.6.3, @azu/mono-two@workspace:packages/mono-two":
   version: 0.0.0-use.local
   resolution: "@azu/mono-two@workspace:packages/mono-two"
   dependencies:
-    "@azu/mono-one": ^1.6.3
+    "@azu/mono-one": ^2.0.0
   languageName: unknown
   linkType: soft
 
