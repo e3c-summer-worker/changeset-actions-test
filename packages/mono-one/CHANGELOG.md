@@ -1,5 +1,11 @@
 # @azu/mono-one
 
+## 1.7.0
+
+### Minor Changes
+
+- 9dc51ff: Add new "test' variable (this will bump the version from 1.6.3 to 1.7.3)
+
 ## 1.6.3
 
 ### Patch Changes
