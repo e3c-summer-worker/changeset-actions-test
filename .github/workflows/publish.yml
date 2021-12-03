@@ -24,5 +24,7 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
-      - name: Publish
-        run: echo "Publishing..."
+      - name: Create Release Pull Request
+        uses: changesets/action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
