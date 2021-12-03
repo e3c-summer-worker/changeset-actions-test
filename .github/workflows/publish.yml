@@ -38,4 +38,4 @@ jobs:
           # I don't call changeset publish with my yarn release B)
           publish: yarn release
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CHANGESET_PAT }}

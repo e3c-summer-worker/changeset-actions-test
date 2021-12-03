@@ -2,12 +2,6 @@
 
 This is a repo to test out the [Changesets/action](https://github.com/changesets/action) GH action, so I can use automate versioning in the [Components](https://github.com/e3c-summer-worker/components) repo.
 
-## NOTE:
-
-The Changeset/actions bot requires a Github Personal Access token to work. I created one for it to use (go to [Settings -> Tokens](https://github.com/settings/tokens)), but for security reasons (and because this repo is meant to be temporary), I've made it expire on March 3, 2022.
-
-If you want to test the repo after that date, please make a new PAT and update the actions secrets [at the Repo Settings -> Secrets](https://github.com/e3c-summer-worker/changeset-actions-test/settings/secrets/actions).
-
 ## Motivation
 
 I inisially created my components repo based off of [monorepo-release-changesets](https://github.com/azu/monorepo-release-changesets), but their versioning system is a bit complicated, unnecessary and buggy for me. I wanted to have a repo to freely test out versioning automation.
