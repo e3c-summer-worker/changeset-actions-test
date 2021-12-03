@@ -1,5 +1,15 @@
 # @azu/mono-one
 
+## 2.0.0
+
+### Major Changes
+
+- 9048d85: export 'two' instead of 'one'
+
+  WHY: Testing large updates
+  WHAT: export a different string
+  HOW: make sure you know i'm exporting a different string.
+
 ## 1.8.1
 
 ### Patch Changes

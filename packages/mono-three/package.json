@@ -1,6 +1,6 @@
 {
   "name": "@azu/mono-three",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "",
   "homepage": "https://github.com/azu/monorepo-release-changesets/tree/master/packages/mono-three/",
   "bugs": {
@@ -27,8 +27,8 @@
     "test": "echo OK"
   },
   "dependencies": {
-    "@azu/mono-one": "^1.8.1",
-    "@azu/mono-two": "^1.6.0"
+    "@azu/mono-one": "^2.0.0",
+    "@azu/mono-two": "^1.6.3"
   },
   "publishConfig": {
     "access": "public"

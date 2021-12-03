@@ -1,6 +1,6 @@
 {
   "name": "@azu/mono-two",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "",
   "homepage": "https://github.com/azu/monorepo-release-changesets/tree/main/packages/mono-two/",
   "bugs": {
@@ -27,7 +27,7 @@
     "test": "echo OK"
   },
   "dependencies": {
-    "@azu/mono-one": "^1.6.3"
+    "@azu/mono-one": "^2.0.0"
   },
   "publishConfig": {
     "access": "public"

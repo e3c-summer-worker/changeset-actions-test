@@ -1,5 +1,12 @@
 # @azu/mono-two
 
+## 1.6.3
+
+### Patch Changes
+
+- Updated dependencies [9048d85]
+  - @azu/mono-one@2.0.0
+
 ## 1.6.2
 
 ### Patch Changes
