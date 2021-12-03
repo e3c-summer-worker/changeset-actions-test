@@ -1,4 +1,8 @@
-name: Publish
+name: PR from Commit on Main
+
+# This workflow analyzes a commit to main
+# and if there is a changeset, will create a PR
+# else, it will publish
 
 on:
   push:
@@ -6,7 +10,7 @@ on:
       - main
 
 jobs:
-  publish:
+  pr-from-commit:
     name: Publish or Create Pull Request
     runs-on: ubuntu-latest
     steps:
@@ -21,8 +25,8 @@ jobs:
         with:
           node-version: 16.x
 
-      - name: Install Dependencies
-        run: yarn install
+      - name: Install/Update Dependencies
+        run: yarn
 
       - name: Create Release Pull Request
         uses: changesets/action@v1
