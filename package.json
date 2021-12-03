@@ -19,14 +19,15 @@
     ]
   },
   "scripts": {
-    "test": "lerna run test",
-    "add-changesets": "changeset add",
-    "release-ci": "lerna publish from-package --y --no-verify-access"
+    "publish": "yarn workspaces foreach run publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.6.1",
     "lerna": "^3.20.2",
     "pr-to-changesets": "^1.0.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "packageManager": "yarn@3.1.1"
 }

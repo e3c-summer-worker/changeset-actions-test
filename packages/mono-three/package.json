@@ -24,7 +24,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo OK"
+    "test": "echo OK",
+    "publish": "echo publishing..."
   },
   "dependencies": {
     "@azu/mono-one": "^2.0.0",
