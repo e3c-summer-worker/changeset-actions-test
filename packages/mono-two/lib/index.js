@@ -1,2 +1,2 @@
-module.exports = "two";
+module.exports = 'two';
 const test = 'hello';
