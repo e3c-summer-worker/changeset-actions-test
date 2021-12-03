@@ -2,7 +2,7 @@
   "name": "@azu/mono-two",
   "version": "1.6.1",
   "description": "",
-  "homepage": "https://github.com/azu/monorepo-release-changesets/tree/master/packages/mono-two/",
+  "homepage": "https://github.com/azu/monorepo-release-changesets/tree/main/packages/mono-two/",
   "bugs": {
     "url": "https://github.com/azu/monorepo-release-changesets/issues"
   },

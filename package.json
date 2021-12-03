@@ -3,13 +3,13 @@
   "name": "root",
   "version": "1.0.0",
   "description": "A monorepo use yarn and changesets without lerna.",
-  "homepage": "https://github.com/azu/monorepo-release-changesets",
+  "homepage": "https://github.com/e3c-summer-worker/changeset-actions-test",
   "bugs": {
-    "url": "https://github.com/azu/monorepo-release-changesets/issues"
+    "url": "https://github.com/e3c-summer-worker/changeset-actions-test/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/azu/monorepo-release-changesets.git"
+    "url": "https://github.com/e3c-summer-worker/changeset-actions-test.git"
   },
   "license": "MIT",
   "author": "azu",
