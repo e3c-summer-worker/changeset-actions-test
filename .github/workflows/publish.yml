@@ -40,6 +40,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.CHANGESET_PAT }}
 
+      # Note: This doesn't work lol
       - name: Send a Whatsapp notification if a publish happens
         if: steps.changesets.outputs.published == 'true'
         uses: e3c-summer-worker/whatsapp-message-action@v1.1
