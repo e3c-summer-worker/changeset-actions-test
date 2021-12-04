@@ -1,5 +1,11 @@
 # @azu/mono-two
 
+## 1.6.5
+
+### Patch Changes
+
+- d65eae1: Patch update for mono two
+
 ## 1.6.4
 
 ### Patch Changes
