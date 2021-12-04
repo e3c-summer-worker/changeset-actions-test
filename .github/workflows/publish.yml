@@ -39,3 +39,13 @@ jobs:
           publish: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.CHANGESET_PAT }}
+
+      - name: Send a Whatsapp notification if a publish happens
+        if: steps.changesets.outputs.published == 'true'
+        uses: e3c-summer-worker/whatsapp-message-action@v1
+        with:
+          message: New published version in Changeset Action Test repo!
+          vonage-number: 14157386102
+          whatsapp-number: ${{ secrets.CELLPHONE_NUMBER }}
+          API_KEY: ${{ secrets.VONAGE_API_KEY }}
+          API_SECRET: ${{ secrets.VONAGE_API_SECRET }}
